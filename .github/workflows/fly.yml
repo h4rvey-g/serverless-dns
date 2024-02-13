@@ -69,7 +69,7 @@ env:
   # default fly app to deploy to (typically, dev)
   FLY_APP: "rdns-dev"
   FLY_TLS_APP: "rdns-b1"
-  FLY_PROD_ONEBOX_APP: "rdns"
+  FLY_PROD_ONEBOX_APP: ${{ secrets.FLY_APP_NAME }}
   FLY_PROD_APP: "udns"
   FLY_CFG: "fly.toml"
   FLY_TLS_CFG: "fly.tls.toml"
